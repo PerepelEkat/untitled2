@@ -10,7 +10,7 @@ public class Main {
         System.out.println(calc(newExp));
     }
 
-    public static int calc(String input) throws Exception {
+    public static String calc(String input) throws Exception {
 
 
         char[] chars = new char[10];
@@ -64,7 +64,8 @@ public class Main {
             case "*" -> a * b;
             default -> a / b;
         };
-        return result;
+
+        return input;
     }
 }
 
