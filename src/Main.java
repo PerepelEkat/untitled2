@@ -58,14 +58,16 @@ public class Main {
         }
 
 
-        int result = switch (actions[actionIndex]) {
+        int res = switch (actions[actionIndex]) {
             case "+" -> a + b;
             case "-" -> a - b;
             case "*" -> a * b;
             default -> a / b;
         };
 
-        return input;
+        String result = ""+res;
+
+        return result;
     }
 }
 
